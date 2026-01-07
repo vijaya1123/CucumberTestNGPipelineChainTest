@@ -4,8 +4,6 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                   git branch: 'master', 
-                   url: 'https://github.com/vijaya1123/CucumberTestNGPipelineChainTest.git'
                      bat "mvn -Dmaven.test.failure.ignore=true clean package"
 
             }
